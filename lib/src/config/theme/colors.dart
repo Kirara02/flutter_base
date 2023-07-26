@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../utils/color_utils.dart';
 
-class UXAppColors {
+class AppColors {
   static final MaterialColor primaryColors =
       ColorUtility.generateMaterialColor(primary);
 
@@ -27,7 +27,7 @@ class UXAppColors {
   static const Color gojekBlue = Color(0xFFC8F7FA);
 }
 
-class UXColors {
+class UIColors {
   static const Color white = Color(0xFFFFFFFF);
   static const Color text = Color(0xFF404040);
   static const Color grey_20 = Color(0xFFF0F3F6);
