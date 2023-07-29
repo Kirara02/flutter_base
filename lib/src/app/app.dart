@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../config/constant.dart';
+import '../config/theme/colors.dart';
 import 'main_navigation.dart';
 
 class App extends StatefulWidget {
@@ -23,7 +25,24 @@ class _AppState extends State<App> {
       title: 'Flutter Base Template',
       theme: ThemeData(
         useMaterial3: true,
-        textTheme: GoogleFonts.robotoTextTheme(Theme.of(context).textTheme),
+        textTheme:
+            GoogleFonts.interTextTheme(Theme.of(context).primaryTextTheme),
+        appBarTheme: const AppBarTheme(
+          titleTextStyle: TextStyle(
+            color: UIColors.white,
+            fontWeight: FontWeight.w500,
+            fontSize: AppConstants.kFontSizeL,
+          ),
+          centerTitle: true,
+          backgroundColor: AppColors.primary,
+          actionsIconTheme: IconThemeData(
+            color: UIColors.white,
+          ),
+          iconTheme: IconThemeData(
+            color: UIColors.white,
+          ),
+        ),
+        scaffoldBackgroundColor: AppColors.primary,
       ),
       home: const MainNavigation(),
     );
