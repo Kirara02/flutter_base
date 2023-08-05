@@ -6,7 +6,7 @@ class AppColors {
   static final MaterialColor primaryColors =
       ColorUtility.generateMaterialColor(primary);
 
-  static const Color primary = Color(0xFF009C4D);
+  static const Color primary = Color(0xFF1e1e1e);
   static const Color primaryLight = Color(0xff7209b7);
   static const Color primaryDark = Color(0xff06283D);
   static const Color danger = Color(0xffE76161);
