@@ -2,6 +2,8 @@
 
 import 'package:flutter/material.dart';
 
+import '../../../widgets/common/ux_development.dart';
+
 class FavoritePage extends StatelessWidget {
   const FavoritePage({Key? key}) : super(key: key);
 
@@ -12,13 +14,9 @@ class FavoritePage extends StatelessWidget {
         title: const Text("Favorite "),
         actions: const [],
       ),
-      body: SingleChildScrollView(
-        child: Container(
-          padding: const EdgeInsets.all(10.0),
-          child: Column(
-            children: [],
-          ),
-        ),
+      body: Container(
+        padding: const EdgeInsets.all(10.0),
+        child: const UXDevelopment(showButton: false),
       ),
     );
   }
